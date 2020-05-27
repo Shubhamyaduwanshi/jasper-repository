@@ -60,7 +60,7 @@ public class JasperReportServiceImp  implements JasperReportService{
 			// Fill the report
 			JasperPrint jasperPrint = JasperFillManager.fillReport(jasperReport, parameters, source);
 			// Export the report to a PDF file
-			JasperExportManager.exportReportToPdfFile(jasperPrint, path+"Empployee.pdf");
+			JasperExportManager.exportReportToPdfFile(jasperPrint, path+"Employee.pdf");
 			log.info("PDF File Generated !!");
 			JasperExportManager.exportReportToXmlFile(jasperPrint, path+"Employee.xml", true);
 			log.info("XML File Generated !!");

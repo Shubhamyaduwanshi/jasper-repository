@@ -19,18 +19,53 @@ public class Employee {
 	private String oraganization;
 	private String designation;
 	private int salary;
+	private String reportTo;
+	private String Branch;
+	
+	
 	
 	public Employee() {
 		
 	}
 	
-	public Employee(int id, String name, String oraganization, String designation, int salary) {
+	
+	public Employee(int id, String name, String oraganization, String designation, int salary, String reportTo,
+			String branch) {
 		this.id = id;
 		this.name = name;
 		this.oraganization = oraganization;
 		this.designation = designation;
 		this.salary = salary;
+		this.reportTo = reportTo;
+		Branch = branch;
 	}
+
+
+
+	public String getReportTo() {
+		return reportTo;
+	}
+
+
+
+	public void setReportTo(String reportTo) {
+		this.reportTo = reportTo;
+	}
+
+
+
+	public String getBranch() {
+		return Branch;
+	}
+
+
+
+	public void setBranch(String branch) {
+		Branch = branch;
+	}
+
+
+
 	public int getId() {
 		return id;
 	}
